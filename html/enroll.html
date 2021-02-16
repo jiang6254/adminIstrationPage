@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入css样式 -->
+    <link rel="stylesheet" href="../css/enroll.css">
+    <title>注册页面</title>
+</head>
+<body>
+    <div id="enrollMain">
+    <form action="enroll.html">
+        <table > 
+          <tr>
+            <td colspan="2"><font color="blue" size="5">用户注册</font> USER REGISTER</td>
+          </tr>
+          <tr>
+            <td>用户名:</td>
+            <td>
+              <input type="text"  placeholder="请输入12个字符以内的用户名" id="userName" value=""/>
+            </td>
+          </tr>
+          <tr>
+            <td>密   码:</td>
+            <td>
+              <!-- 把用户名的函数用点击响应方法设置在密码框，在输入用户名后点击密码框执行用户名函数，检测用户输入数据，错则弹出提示框 -->
+              <input type="password"  placeholder="请输入6-12位以内的密码" id="code" value="" onclick="autoUserName()"/>
+            </td>
+          </tr>
+          <tr>
+            <td>确认密码:</td>
+            <td>
+              <input type="password"  placeholder="请再次输入一样的密码" id="affirmCode" value="" onclick="codeUserName()"/>
+            </td>
+          </tr>
+          <tr>
+            <td>email:</td>
+            <td>
+              <input type="text"  placeholder="请输入邮箱" id="email" value="" onclick="affUserName()"/>
+            </td>
+          </tr>
+          <tr>
+            <td>姓名:</td>
+            <td>
+              <input type="text"  placeholder="请输入真实姓名" id="name" value="" onclick="emailUserName()"/>
+            </td>
+          </tr>
+          <tr>
+            <td>性别:</td>
+            <td>
+              <input type="radio" name="sex"  onclick="nameUserName()"/> 男
+              <input type="radio" name="sex"  onclick="nameUserName()"/> 女
+              
+            </td>
+          </tr>
+          
+          <tr>
+              <td>输入手机号:</td>
+              <td>
+                  <input type="text" placeholder="请输入11位数字的电话号码" id="phone" value="">
+              </td>
+          </tr>
+
+          <tr>
+            <td>出生日期:</td>
+            <td>
+              <input type="date"  value="" onclick="phoneUserName()" />
+            </td>
+          </tr>
+          <tr>
+            <td>验证码:</td>
+            <td>
+              <button id="gainAuthCode" onclick="codeMa()" >获取验证码</button>
+              <input type="text"  placeholder="请输入验证码" id="authCode" value="" />
+              
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              
+              <input type="submit" value="注册" onclick="codeNum()" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <!-- 引入enroll.js文件 -->
+    <script src="../js/enroll.js"></script>
+</body>
+</html>

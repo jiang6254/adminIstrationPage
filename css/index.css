@@ -1,0 +1,101 @@
+/* 主体 */
+.main {
+    width: 400px;
+    height: 600px;
+    margin: 20px 550px;
+    border: 2px solid #0d0d0e;
+    /* float: left; */
+}
+
+.enter a{
+    width: 300px;
+    height: 50px;
+}
+
+/* 轮播图 */
+/* 轮播图容器 */
+#outer {
+    width: 390px;
+    height: 420px;
+    border: 2px solid #a0a0a3;
+    /* 相对定位  */
+    position: relative;
+    overflow: hidden;
+    margin: 3px;
+}
+
+#imgList {
+    /* 绝对定位 */
+    list-style: none;
+    position: absolute;
+
+    left: 0px;
+}
+
+/* li浮动 */
+#imgList li {
+    float: left;
+}
+
+/* 图片 */
+#imgList img {
+    width: 390px;
+    height: 420px;
+}
+
+/* 登陆注册按钮样式 */
+#zhuce,
+#denlu {
+    background-color: rgba(233, 48, 48, 0.884);
+    font-size: 18px;
+    width: 300px;
+    height: 50px;
+    margin: 20px 50px;
+}
+
+
+
+/* 未被访问时的状态 */
+#denlu:link,
+#zhuce:link {
+
+    font-size: 18px;
+
+    color: rgba(233, 48, 48, 0.884);
+
+    
+
+}
+/* 用户已访问的状态 */
+#denlu:visited,
+#zhuce:visited {
+
+    font-size: 18px;
+
+    color: rgba(233, 48, 48, 0.884);
+
+    
+
+}
+/* 鼠标经过的状态 */
+#denlu:hover,
+#zhuce:hover {
+
+    font-size: 34px;
+
+    color: green;
+
+    
+
+}
+/* 鼠标点击状态 */
+#denlu:active,
+#zhuce:active {
+
+    font-size: 18px;
+
+    color: rgba(233, 48, 48, 0.884);
+
+    background-color: #dce7db;
+
+}
